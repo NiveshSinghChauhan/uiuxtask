@@ -1,0 +1,159 @@
+:host {
+  padding: 0 80px;
+  display: flex;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.left {
+  margin: 80px 0;
+  width: 50%;
+  margin-right: 80px;
+}
+
+.right {
+  width: 50%;
+  align-content: stretch;
+  box-sizing: border-box;
+  background: #f9fafa;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-row-gap: 40px;
+
+  .category {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #000000;
+    align-self: center;
+  }
+}
+
+.title {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  color: #000000;
+  margin: 25px 0;
+}
+
+.domain-category {
+  display: flex;
+  align-content: center;
+
+  .domain {
+    width: 60px;
+    transform: translateY(5px);
+  }
+  .category {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #000000;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid gray;
+  }
+}
+
+.price {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 38px;
+  color: #000000;
+}
+
+.image {
+  width: 240px;
+  justify-self: center;
+  align-self: center;
+}
+
+.top-scores {
+  margin-top: 80px;
+
+  & > .heading {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+
+  .topics {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+    justify-content: flex-start;
+
+    .topic {
+      .heading {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        color: #808080;
+        margin-bottom: 10px;
+      }
+
+      .star-rating {
+        display: flex;
+
+        i {
+          margin-right: 5px;
+        }
+      }
+
+      &.sound i {
+        color: #2ecb14;
+      }
+      &.bass {
+        color: #afea09;
+      }
+      &.build i {
+        color: #f8e10f;
+      }
+      &.battery i {
+        color: #f8630f;
+      }
+    }
+  }
+}
+
+.details {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-row-gap: 30px;
+  grid-column-gap: 50px;
+  align-content: flex-start;
+
+  .prop {
+    .heading {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      color: #808080;
+      margin-bottom: 10px;
+    }
+    .value {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      color: #000000;
+    }
+  }
+}

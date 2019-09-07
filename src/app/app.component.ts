@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import dataJson from './data';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'uiuxtask';
+
+  data = dataJson;
+
 }

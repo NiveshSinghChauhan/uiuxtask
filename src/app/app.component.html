@@ -1,20 +1,82 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="left">
 
+  <div class="domain-category">
+    <a [href]="data.domain">
+      <img src="assets/amazon-2.svg" alt="" class="domain">
+    </a>
+    <p class="category">Bluetooth Speakers</p>
+  </div>
+
+  <p class="title">
+    {{ data.title }}
+  </p>
+
+  <p class="price">{{ data.price.split('.')[0] }}</p>
+
+  <div class="top-scores">
+    <p class="heading">TOP SCORES</p>
+    <div class="topics">
+      <div class="topic sound">
+        <p class="heading">SOUND QUALITY</p>
+        <div class="star-rating">
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star_half</i>
+        </div>
+      </div>
+      <div class="topic build">
+        <p class="heading">DESIGN & BUILD</p>
+        <div class="star-rating">
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+        </div>
+      </div>
+      <div class="topic bass">
+        <p class="heading">BASS</p>
+        <div class="star-rating">
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+        </div>
+      </div>
+      <div class="topic battery">
+        <p class="heading">BATTERY BACKUP</p>
+        <div class="star-rating">
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="right">
+  <p class="category">Bluetooth Speakers</p>
+
+
+  <img src="assets/hero.png" class="image">
+
+  <div class="details">
+    <div class="prop id">
+      <p class="heading">PRODUCT ID</p>
+      <p class="value">ABCD1234</p>
+    </div>
+    <div class="prop created">
+      <p class="heading">CREATED AT</p>
+      <p class="value">31 September, 2018</p>
+    </div>
+    <div class="prop reviews">
+      <p class="heading">TOTAL REVIEWS</p>
+      <p class="value">3013</p>
+    </div>
+    <div class="prop last-review">
+      <p class="heading">LAST REVIEW DATE</p>
+      <p class="value">21 December, 2018</p>
+    </div>
+  </div>
+</div>
